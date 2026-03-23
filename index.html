@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura AI</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="cursor-glow"></div>
+<header class="nav">
+  <h2>Aura AI</h2>
+  <button class="nav-btn">Get Started</button>
+</header>
+
+
+<section class="hero reveal">
+  <h1>Design Smarter. Work Faster.</h1>
+  <p>Your AI-powered productivity partner built for modern creators.</p>
+  <button class="cta">Start Free</button>
+</section>
+
+
+<section class="features reveal">
+  <h2>Features</h2>
+  <div class="feature-grid">
+
+    <div class="card">
+      <h3>AI Writing</h3>
+      <p>Create content instantly with smart suggestions.</p>
+    </div>
+
+    <div class="card">
+      <h3>Automation</h3>
+      <p>Save time by automating repetitive tasks.</p>
+    </div>
+
+    <div class="card">
+      <h3>Insights</h3>
+      <p>Make smarter decisions with real-time data.</p>
+    </div>
+
+    <div class="card">
+      <h3>Cloud Sync</h3>
+      <p>Access anywhere, anytime.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about reveal">
+  <div class="glass">
+    <h2>About Aura AI</h2>
+    <p>
+      Aura AI simplifies your workflow with intelligent automation and elegant design.
+      Built for creators who want speed, clarity, and control.
+    </p>
+  </div>
+</section>
+
+
+<section class="cta-section reveal">
+  <h2>Start Your Journey Today</h2>
+  <button class="cta">Join Now</button>
+</section>
+
+
+<section class="contact reveal">
+  <div class="glass">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Message"></textarea>
+      <button>Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Aura AI</p>
+</footer>
+
+<script>
+
+const reveals = document.querySelectorAll('.reveal');
+
+window.addEventListener('scroll', () => {
+  reveals.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if(top < window.innerHeight - 100){
+      el.classList.add('active');
+    }
+  });
+});
+
+const glow = document.querySelector('.cursor-glow');
+document.addEventListener('mousemove', (e) => {
+  glow.style.left = e.clientX + 'px';
+  glow.style.top = e.clientY + 'px';
+});
+</script>
+
+</body>
+</html>
