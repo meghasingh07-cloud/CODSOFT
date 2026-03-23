@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f172a;
+}
+
+.calculator {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  width: 280px;
+}
+
+/* DISPLAY */
+.display {
+  background: #020617;
+  color: #e2e8f0;
+  font-size: 28px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: right;
+  margin-bottom: 15px;
+  overflow-x: auto;
+}
+
+/* BUTTON GRID */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #334155;
+  color: #e2e8f0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #475569;
+}
+
+/* OPERATOR */
+.operator {
+  background: #1d4ed8;
+}
+
+.operator:hover {
+  background: #2563eb;
+}
+
+/* EQUAL */
+.equals {
+  grid-row: span 2;
+  background: #16a34a;
+}
+
+.equals:hover {
+  background: #22c55e;
+}
+
+/* ZERO BUTTON */
+.zero {
+  grid-column: span 2;
+}
+
+/* RESPONSIVE */
+@media (max-width: 400px) {
+  .calculator {
+    width: 90%;
+  }
+}
