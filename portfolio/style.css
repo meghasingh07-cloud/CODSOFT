@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: 'Poppins';
+  background: #0f172a;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-img img {
+  width: 350px;
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  color: #38bdf8;
+  letter-spacing: -1px;
+}
+
+.btn {
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #38bdf8, #a78bfa);
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+section {
+  padding: 60px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  gap: 20px;
+}
+
+.card, .grid div {
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card:hover, .grid div:hover {
+  transform: translateY(-10px);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+button {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
